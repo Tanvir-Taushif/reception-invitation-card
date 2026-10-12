@@ -467,7 +467,14 @@
       letter-spacing: 2px;
       color: var(--navy);
     }
-    .reception-note { margin-top: 18px; }
+    .reception-note { margin-top: 26px; }
+    footer.closing .btn-line {
+      background: rgba(255, 255, 255, 0.5);
+      border-color: rgba(255, 255, 255, 0.95);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+    }
+    footer.closing .btn-line:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
 
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s ease, transform 1s ease; }
     .reveal.active { opacity: 1; transform: none; }
@@ -967,8 +974,11 @@
         </svg>
 
         <div class="hashtag">#PialWedsHridita</div>
-        <!-- Link to the Marriage Programme card (change the address if you host the cards somewhere else) -->
-        <p class="kicker reception-note" style="text-shadow:0 1px 10px #fff;"><a href="pial-hridita-cloud.html" style="color:inherit;">View the Marriage Programme</a></p>
+        <!-- Link to the Marriage Programme card -->
+        <p class="kicker reception-note" style="text-shadow:0 1px 10px #fff;">Also join us for</p>
+        <div class="btn-row" style="margin-top:12px;">
+          <a class="btn btn-line" href="https://tanvir-taushif.github.io/marriage-invitation-card/"><i class="fa-regular fa-envelope-open"></i> View the Marriage Programme</a>
+        </div>
       </div>
     </footer>
   </main>
